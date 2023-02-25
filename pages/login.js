@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import React from 'react'
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { addCart, logIn } from '../redux/action/ActionType';
@@ -16,6 +17,10 @@ const Login = () => {
     dispatch(logIn(user));
     router.push(`/products`);
   }
+
+  useEffect(()=>{
+    alert('Please use this data to get entered:- \n username: kminchelle \npassword: 0lelplR');
+  })
 
   const logInData = (e) => {
     let name = e.target.name;

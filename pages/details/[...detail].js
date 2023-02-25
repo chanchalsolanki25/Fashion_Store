@@ -70,8 +70,6 @@ const Detail = () => {
     }
     else {
       router.push('/login');
-      alert('Please use this data to get entered :- \n username: kminchelle \n password: 0lelplR');
-
     }
   }
 

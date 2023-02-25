@@ -39,7 +39,6 @@ const Navbar = () => {
     const handleLogin = () => {
         if (loginData) {
             router.push('/login');
-            alert('Please use this data to get entered :- \n username: kminchelle \n password: 0lelplR');
             dispatech(clearLogin());
             dispatech(clearAddress());
             dispatech(clearOrder());
